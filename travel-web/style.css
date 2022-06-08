@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+body {
+    font:15px/1.5 'Viaoda Libre', cursive;
+    padding:0;
+    margin:0;
+    background-color: mintcream;
+    box-sizing:border-box;
+    list-style: none;
+}
+
+/* Global */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: lightseagreen;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+}
+
+.button_1:hover{
+    font-weight: bold;
+    background: yellowgreen;
+    transition: 0.8s;
+}
+
+.dark{
+    padding: 15px;
+    background:rgb(125, 178, 232);
+    color:#ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid sandybrown;
+}
+.dark h3{
+    color:black;
+    list-style-type: none;
+}
+.dark ul{
+    list-style-type:georgian;
+    margin-left: 5px;
+}
+
+/* Home_index1.html */
+/* Header */
+header{
+    background-color:slategray;
+    color:whitesmoke;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: sandybrown 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float:left;
+    display: flex;
+    padding: 0 8px 0 8px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin-bottom:20px;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color:turquoise;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:rosybrown;
+    font-weight: bold;
+    border-bottom: 4px solid sandybrown;
+    transition:0.4s;
+    display: block;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 400px;
+    max-width: 100%;
+    background: url("../img/phat-di-lac.jpeg") center;
+    text-align:center;
+    color:rgba(246, 249, 241, 0.721);
+}
+#showcase h1{
+    margin-top: 160px;
+    font-size:55px;
+}
+
+#showcase p{
+    font-size:18px;
+}
+
+/* Newsletter */
+#newsletter{
+    padding:15px;
+    color:#ffffff;
+    background: slategray;
+}
+
+#newsletter h1{
+    float:left;
+    font-size: 25px;
+}
+
+#newsletter form{
+    float:right;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height:25px;
+    width: 250px;
+}
+
+/* Landscapes */
+#landscapes {
+    margin-top: 20px;
+    align-items: center;
+}
+
+#landscapes .landscape {
+    float: left;
+    width:33%;
+    align-items: center;
+    text-align: center;
+}
+
+#landscapes img {
+    width:250px;
+}
+
+/* Destinations_ destinations.html */
+/* Sidebar */
+
+.destinations{
+    background:url(/img/green-wall.jpeg);
+}
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+}
+
+/* Main-col */
+article#main-col {
+    float: left;
+    width:65%;
+    margin-top: 20px;
+}
+
+.col {
+    display: inline-block;
+    padding: 0;
+    margin: 20px 20px;
+}
+.col img {
+    padding:10px 5px;
+    width: 100%;
+}
+
+/* Tours_ tours.html */
+/* tours */
+#main {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/green-wall.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+}
+
+.heading {
+    width: 40%;
+    text-align: center;
+    color:rgb(13, 85, 87);
+    float: left;
+    padding-top: 30px;
+}
+.heading p {
+    color: rgba(34, 97, 165, 0.742);
+}
+
+.heading a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px;
+    background-color: tomato;
+}
+
+.heading a:hover{
+    letter-spacing: 3px;
+    transition: 0.6s
+}
+
+.tours {
+    padding: 40px 0px;
+    text-align: center;
+    align-items: center;
+}
+.tours .places{
+    float: left;
+    padding: 30px;
+}
+.tours img{
+    padding: 0px 20px 0px 0px;
+    width: 100%;
+}
+
+.places h3{
+    color:red;
+}
+
+.places a{
+    text-decoration:none;
+    color:red;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 12px 30px;
+    background-color: yellow;
+}
+
+.places a:hover{
+    background-color: #000;
+    letter-spacing: 3px;
+    transition: 0.6s;
+}
+
+/*Contact*/
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(img/green-wall.jpeg);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(187, 63, 25);
+
+}
+
+.layout {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.layout .contactInfo {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.layout .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.layout .contactInfo .box .icon {
+    min-width: 60px;
+    height:60px;
+    background:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.layout .contactInfo .text {
+    display: flex;
+    margin-left: 20px;font-size: 16px;
+    color: rgb(30, 108, 167);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.layout.contactInfo .text h3 {
+    font-weight: 500;
+    color: lightskyblue;
+}
+
+.contactForm {
+    width:60%;
+    padding: 40px;
+    background: whitesmoke;
+}
+
+.contactForm h2 {
+    font-size: 30px;    
+    color: black;
+    font-weight: 500px;
+}
+
+.contactForm .inputBox {
+    position:relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, textarea, input[type="submit"] {
+    width:100%;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+/*Gallery*/
+.gallery {
+    margin:5px;
+    border: 1px solid whitesmoke;
+    float: left;
+    width: 390px;
+}
+.gallery img {
+    padding: 5px;
+    width:100%;
+}   
+.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: sandybrown;
+    height:auto;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Media Query */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header ul li
+    #newsletter h1,
+    #newsletter form,
+    #landscapes .landscape,
+    .heading, .places{
+        float: none;
+        align-items: center;
+        text-align: center;
+        width:95%;
+    }
+    header nav {
+        width:100%;
+    }
+    .landscape {
+        margin: auto;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button{
+        display:inline-block;
+        width:100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    .places {
+        padding:30px 0;
+    }
+    
+    .layout {
+        width: 100%;
+        flex-direction: column;
+        place-items:unset;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+    #landscapes .landscape, .heading{
+    float: none;
+    text-align:center;
+    width:100%;
+    }
+
+    .places {
+        float:left;
+        padding: 30px 0px;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
